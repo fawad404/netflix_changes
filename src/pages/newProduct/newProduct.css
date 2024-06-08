@@ -1,0 +1,76 @@
+.newProduct{
+    flex: 4;
+}
+.addProductForm{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.addProductItem{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.addProductItem > label{
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: 600;
+
+}
+.addProductItem>input{
+    padding: 10px;
+}
+.addProductItem > select{
+    padding: 10px;
+} 
+.addProductTitle{
+    margin-left: 20px;
+}
+
+.addProductButton{
+    height: 30px;
+    margin-top: 10px;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: darkblue;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: center;
+}
+
+
+
+  
+ 
+  
+  .progress-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    /* background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0); */
+      background: radial-gradient(closest-side, white 79%, transparent 80% 100%), conic-gradient(#0faeb7 calc(var(--progress-value) * 1%), #c0e8ff 0);
+      animation: progress 2s 1 forwards;
+    /* position: absolute;
+    right: 11%; */
+  }
+  .top{
+    display: flex;
+    align-items: center;
+  }
+  
+  .progress-bar::before {
+    counter-reset: percentage var(--progress-value);
+    content: counter(percentage) '%';
+    animation: 50 2s 1 forwards;
+  }
+
